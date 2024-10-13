@@ -16,7 +16,7 @@ const Signup: React.FC = () => {
         setData({ ...data, [e.target.name]: e.target.value });
     }
 
-    const handleSubmit = (e:React.FormEventHandler) =>{
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
         console.log(data);
     }
